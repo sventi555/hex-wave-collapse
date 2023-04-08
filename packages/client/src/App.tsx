@@ -7,8 +7,17 @@ export const App = () => {
   let hexGrid: HexGrid;
 
   const setup = (p5: p5Types, canvasParentRef: Element) => {
-    p5.createCanvas(800, 800).parent(canvasParentRef);
-    hexGrid = createHexGrid(10, [
+    p5.createCanvas(1000, 1000).parent(canvasParentRef);
+    hexGrid = createHexGrid(20, [
+      new HexTile({
+        NW: '#000',
+        NE: '#000',
+        E: '#000',
+        SE: '#000',
+        SW: '#000',
+        W: '#000',
+        C: '#000',
+      }),
       new HexTile({
         NW: '#000',
         NE: '#FFF',
@@ -16,7 +25,43 @@ export const App = () => {
         SE: '#FFF',
         SW: '#FFF',
         W: '#FFF',
-        C: '#FFF',
+        C: '#000',
+      }),
+      new HexTile({
+        NW: '#000',
+        NE: '#000',
+        E: '#FFF',
+        SE: '#FFF',
+        SW: '#FFF',
+        W: '#FFF',
+        C: '#000',
+      }),
+      new HexTile({
+        NW: '#000',
+        NE: '#FFF',
+        E: '#000',
+        SE: '#FFF',
+        SW: '#FFF',
+        W: '#FFF',
+        C: '#000',
+      }),
+      new HexTile({
+        NW: '#000',
+        NE: '#FFF',
+        E: '#FFF',
+        SE: '#000',
+        SW: '#FFF',
+        W: '#FFF',
+        C: '#000',
+      }),
+      new HexTile({
+        NW: '#000',
+        NE: '#FFF',
+        E: '#000',
+        SE: '#FFF',
+        SW: '#000',
+        W: '#FFF',
+        C: '#000',
       }),
     ]);
   };

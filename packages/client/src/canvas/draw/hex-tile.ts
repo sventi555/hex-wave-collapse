@@ -9,7 +9,7 @@ const SMALL_TILE_DIAG = HEX_TILE_DIAG / 3;
 const SMALL_TILE_SIDE_LEN = SMALL_TILE_DIAG / 2;
 
 export const drawHexTile = (p5: p5Types, hexTile: HexTile) => {
-  const diamondFill = '#F00';
+  const diamondFill = '#FFF';
 
   p5.angleMode(p5.DEGREES);
   p5.strokeWeight(0);
